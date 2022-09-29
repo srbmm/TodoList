@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container">
-    <div class="logi none">
+    <div class="login none">
         <input class="userName" type="text" placeholder="نام کاربری">
         <input class="lastName" type="text" placeholder="نام و نام خانوادگی">
         <input class="phone" type="text" placeholder="شماره موبایل">
@@ -20,7 +20,33 @@
         <button class="btn-success">ثبت</button>
     </div>
     <div class="black none"></div>
-    <header style="background: aqua" class="header">header</header>
+    <header class="header">
+        <button class="days">شنبه
+            <span class="toDoCount">0</span>
+        </button>
+        <button class="days">یک شنبه
+            <span class="toDoCount">0</span>
+        </button>
+        <button class="days">دو شنبه
+            <span class="toDoCount">0</span>
+        </button>
+        <button class="days activebtn">
+            سه شنبه
+            <span class="toDoCount">0</span>
+        </button>
+        <button class="days">
+            چهار شنبه
+            <span class="toDoCount">0</span>
+        </button>
+        <button class="days">
+            پنج شنبه
+            <span class="toDoCount">0</span>
+        </button>
+        <button class="days">
+            جمعه
+            <span class="toDoCount">0</span>
+        </button>
+    </header>
     <main class="main">
         <header class="main-header">
             <span>سلام علی!</span>
@@ -42,20 +68,29 @@
             </div>
             <div class="items checked">
                 <div class="right-items">
-                    <button class="main-btn border-btn" ><i class="fas fa-check"></i></button>
+                    <button class="main-btn border-btn"><i class="fas fa-check"></i></button>
                     <div class="todoactivity">raftan be bashgah</div>
                 </div>
                 <div class="left-items">
                     <div class="timetodo">18:00</div>
                     <div class="edit-delete">
-                        <button class="main-btn" ><i class="fas fa-trash"></i></button>
-                        <button class="main-btn" ><i class="fas fa-edit"></i></button>
+                        <button class="main-btn"><i class="fas fa-trash"></i></button>
+                        <button class="main-btn"><i class="fas fa-edit"></i></button>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
-    <footer style="background: chocolate" class="footer">footer</footer>
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="inputs-footer">
+                <input class="task-for-add" type="text" placeholder="بنویسید..."/>
+                <input type="time" class="time-input" id="timer"/>
+            </div>
+            <div class="button-footer">
+                <button class="btn-success">افزودن</button>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
