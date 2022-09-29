@@ -1,98 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-    <link rel="stylesheet" href="font/iranSans.css">
-    <link rel="stylesheet" href="style/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-<body>
-<div class="container">
-    <div class="login ">
-        <input class="userName" type="text" placeholder="نام کاربری">
-        <input class="lastName" type="text" placeholder="نام و نام خانوادگی">
-        <input id="tel" pattern="09[0-9]{9}" class="phone" type="tel" placeholder="شماره موبایل">
+    <link rel="stylesheet" href="font/iranSans.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+      integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login none">
+        <input class="userName" type="text" placeholder="نام کاربری" />
+        <input class="lastName" type="text" placeholder="نام و نام خانوادگی" />
+        <input
+          id="tel"
+          pattern="09[0-9]{9}"
+          class="phone"
+          type="tel"
+          placeholder="شماره موبایل"
+        />
         <button id="btnLogin" class="btn-success">ورود</button>
-    </div>
-    <div class="editable none">
-        <input class="userName" type="text" placeholder="تستت">
+      </div>
+      <div class="editable none">
+        <input class="userName" type="text" placeholder="تستت" />
         <button class="btn-success">ثبت</button>
-    </div>
-    <div class="black "></div>
-    <header class="header">
-        <button class="days">شنبه
-            <span class="toDoCount">0</span>
+      </div>
+      <div class="black none"></div>
+      <header class="header">
+        <button class="days" id="shanbe">
+          شنبه
+          <span class="toDoCount">0</span>
         </button>
-        <button class="days">یک شنبه
-            <span class="toDoCount">0</span>
+        <button class="days" id="1shanbe">
+          یک شنبه
+          <span class="toDoCount">0</span>
         </button>
-        <button class="days">دو شنبه
-            <span class="toDoCount">0</span>
+        <button class="days" id="2shanbe">
+          دو شنبه
+          <span class="toDoCount">0</span>
         </button>
-        <button class="days activebtn">
-            سه شنبه
-            <span class="toDoCount">0</span>
+        <button class="days" id="3shanbe">
+          سه شنبه
+          <span class="toDoCount">0</span>
         </button>
-        <button class="days">
-            چهار شنبه
-            <span class="toDoCount">0</span>
+        <button class="days" id="4shanbe">
+          چهار شنبه
+          <span class="toDoCount">0</span>
         </button>
-        <button class="days">
-            پنج شنبه
-            <span class="toDoCount">0</span>
+        <button class="days" id="5shanbe">
+          پنج شنبه
+          <span class="toDoCount">0</span>
         </button>
-        <button class="days">
-            جمعه
-            <span class="toDoCount">0</span>
+        <button class="days" id="jome">
+          جمعه
+          <span class="toDoCount">0</span>
         </button>
-    </header>
-    <main class="main">
+      </header>
+      <main class="main">
         <header class="main-header">
-            <span id="userHello">سلام علی!</span>
-            <button class="main-btn" id="delete-all"><i class="fas fa-trash"></i></button>
+          <span id="userHello">سلام علی!</span>
+          <button class="main-btn" id="delete-all">
+            <i class="fas fa-trash"></i>
+          </button>
         </header>
         <div class="tasks">
-            <div class="items">
-                <div class="right-items">
-                    <button class="main-btn border-btn" id="tick"><i class="fas fa-check"></i></button>
-                    <div class="todoactivity">raftan be bashgah</div>
-                </div>
-                <div class="left-items">
-                    <div class="timetodo">18:00</div>
-                    <div class="edit-delete">
-                        <button class="main-btn" id="delete"><i class="fas fa-trash"></i></button>
-                        <button class="main-btn" id="edit"><i class="fas fa-edit"></i></button>
-                    </div>
-                </div>
+          <div class="items">
+            <div class="right-items">
+              <button class="main-btn border-btn" id="tick">
+                <i class="fas fa-check"></i>
+              </button>
+              <div class="todoactivity">raftan be bashgah</div>
             </div>
-            <div class="items checked">
-                <div class="right-items">
-                    <button class="main-btn border-btn"><i class="fas fa-check"></i></button>
-                    <div class="todoactivity">raftan be bashgah</div>
-                </div>
-                <div class="left-items">
-                    <div class="timetodo">18:00</div>
-                    <div class="edit-delete">
-                        <button class="main-btn"><i class="fas fa-trash"></i></button>
-                        <button class="main-btn"><i class="fas fa-edit"></i></button>
-                    </div>
-                </div>
+            <div class="left-items">
+              <div class="timetodo">18:00</div>
+              <div class="edit-delete">
+                <button class="main-btn" id="delete">
+                  <i class="fas fa-trash"></i>
+                </button>
+                <button class="main-btn" id="edit">
+                  <i class="fas fa-edit"></i>
+                </button>
+              </div>
             </div>
+          </div>
+          <div class="items checked">
+            <div class="right-items">
+              <button class="main-btn border-btn">
+                <i class="fas fa-check"></i>
+              </button>
+              <div class="todoactivity">raftan be bashgah</div>
+            </div>
+            <div class="left-items">
+              <div class="timetodo">18:00</div>
+              <div class="edit-delete">
+                <button class="main-btn"><i class="fas fa-trash"></i></button>
+                <button class="main-btn"><i class="fas fa-edit"></i></button>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
-    <footer class="footer">
+      </main>
+      <footer class="footer">
         <div class="main-footer">
-            <div class="inputs-footer">
-                <input class="task-for-add" type="text" placeholder="بنویسید..."/>
-                <input type="time" class="time-input" id="timer"/>
-            </div>
-            <div class="button-footer">
-                <button class="btn-success">افزودن</button>
-            </div>
+          <div class="inputs-footer">
+            <input class="task-for-add" type="text" placeholder="بنویسید..." />
+            <input type="time" class="time-input" id="timer" />
+          </div>
+          <div class="button-footer">
+            <button class="btn-success">افزودن</button>
+          </div>
         </div>
-    </footer>
-</div>
-<script src="script/script.js"></script>
-</body>
+      </footer>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
 </html>
