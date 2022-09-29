@@ -149,6 +149,7 @@ body, p, input, button, input::placeholder{
     display: none;
 }
 .header > button {
+    cursor: pointer;
     flex-grow: 1;
     font-weight: bold;
 }
