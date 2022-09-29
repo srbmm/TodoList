@@ -5,11 +5,56 @@
     <title>Title</title>
     <link rel="stylesheet" href="font/iranSans.css">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
+    <div class="logi none">
+        <input class="userName" type="text" placeholder="نام کاربری">
+        <input class="lastName" type="text" placeholder="نام و نام خانوادگی">
+        <input class="phone" type="text" placeholder="شماره موبایل">
+        <button class="btn-success">ورود</button>
+    </div>
+    <div class="editable none">
+        <input class="userName" type="text" placeholder="تستت">
+        <button class="btn-success">ثبت</button>
+    </div>
+    <div class="black none"></div>
     <header style="background: aqua" class="header">header</header>
-    <main style="background: blueviolet" class="main">main</main>
+    <main class="main">
+        <header class="main-header">
+            <span>سلام علی!</span>
+            <button class="main-btn" id="delete-all"><i class="fas fa-trash"></i></button>
+        </header>
+        <div class="tasks">
+            <div class="items">
+                <div class="right-items">
+                    <button class="main-btn border-btn" id="tick"><i class="fas fa-check"></i></button>
+                    <div class="todoactivity">raftan be bashgah</div>
+                </div>
+                <div class="left-items">
+                    <div class="timetodo">18:00</div>
+                    <div class="edit-delete">
+                        <button class="main-btn" id="delete"><i class="fas fa-trash"></i></button>
+                        <button class="main-btn" id="edit"><i class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="items checked">
+                <div class="right-items">
+                    <button class="main-btn border-btn" ><i class="fas fa-check"></i></button>
+                    <div class="todoactivity">raftan be bashgah</div>
+                </div>
+                <div class="left-items">
+                    <div class="timetodo">18:00</div>
+                    <div class="edit-delete">
+                        <button class="main-btn" ><i class="fas fa-trash"></i></button>
+                        <button class="main-btn" ><i class="fas fa-edit"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer style="background: chocolate" class="footer">footer</footer>
 </div>
 </body>
