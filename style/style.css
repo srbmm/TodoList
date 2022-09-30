@@ -36,7 +36,7 @@ input::placeholder {
   width: 100%;
   margin-top: 10vh;
   padding: 1rem;
-  background: #eeeeee;
+  background-color: #ffffff;
 }
 .main-header {
   display: flex;
@@ -164,7 +164,7 @@ input::placeholder {
   margin-top: 1rem;
 }
 .activebtn {
-  background-color: white;
+  background-color: #ffffff;
   border: none;
   display: flex;
   flex-direction: column;
@@ -172,7 +172,7 @@ input::placeholder {
   margin-top: 1.25rem;
 }
 .activebtn .toDoCount {
-  background-color: #d9d9d9;
+  background: #c0bdbd;
   border-radius: 50%;
   width: max-content;
   padding: 0.5rem;
@@ -205,12 +205,4 @@ input::placeholder {
 .time-input {
   flex-grow: 2;
   height: 100%;
-}
-@keyframes rotating {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
