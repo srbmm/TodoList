@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="login none">
+      <div class="login">
         <input class="userName" type="text" placeholder="نام کاربری" />
         <input class="lastName" type="text" placeholder="نام و نام خانوادگی" />
         <input
@@ -27,83 +27,48 @@
         <button id="btnLogin" class="btn-success">ورود</button>
       </div>
       <div class="editable none">
-        <input class="userName" type="text" placeholder="تستت" />
-        <button class="btn-success">ثبت</button>
+        <input id="editText" class="userName" type="text" placeholder="تستت" />
+        <button id="finalEdit" class="btn-success">ثبت</button>
       </div>
-      <div class="black none"></div>
+      <div class="black"></div>
       <header class="header">
         <button class="days" id="shanbe">
           شنبه
-          <span class="toDoCount">0</span>
+          <div class="toDoCount">0</div>
         </button>
         <button class="days" id="1shanbe">
           یک شنبه
-          <span class="toDoCount">0</span>
+          <div class="toDoCount">0</div>
         </button>
         <button class="days" id="2shanbe">
           دو شنبه
-          <span class="toDoCount">0</span>
+          <div class="toDoCount">0</div>
         </button>
         <button class="days" id="3shanbe">
           سه شنبه
-          <span class="toDoCount">0</span>
+          <div class="toDoCount">0</div>
         </button>
         <button class="days" id="4shanbe">
           چهار شنبه
-          <span class="toDoCount">0</span>
+          <div class="toDoCount">0</div>
         </button>
         <button class="days" id="5shanbe">
           پنج شنبه
-          <span class="toDoCount">0</span>
+          <div class="toDoCount">0</div>
         </button>
         <button class="days" id="jome">
           جمعه
-          <span class="toDoCount">0</span>
+          <div class="toDoCount">0</div>
         </button>
       </header>
       <main class="main">
         <header class="main-header">
-          <span id="userHello">سلام علی!</span>
+          <span id="userHello"></span>
           <button class="main-btn" id="delete-all">
             <i class="fas fa-trash"></i>
           </button>
         </header>
-        <div class="tasks">
-          <div class="items">
-            <div class="right-items">
-              <button class="main-btn border-btn" id="tick">
-                <i class="fas fa-check"></i>
-              </button>
-              <div class="todoactivity">raftan be bashgah</div>
-            </div>
-            <div class="left-items">
-              <div class="timetodo">18:00</div>
-              <div class="edit-delete">
-                <button class="main-btn" id="delete">
-                  <i class="fas fa-trash"></i>
-                </button>
-                <button class="main-btn" id="edit">
-                  <i class="fas fa-edit"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="items checked">
-            <div class="right-items">
-              <button class="main-btn border-btn">
-                <i class="fas fa-check"></i>
-              </button>
-              <div class="todoactivity">raftan be bashgah</div>
-            </div>
-            <div class="left-items">
-              <div class="timetodo">18:00</div>
-              <div class="edit-delete">
-                <button class="main-btn"><i class="fas fa-trash"></i></button>
-                <button class="main-btn"><i class="fas fa-edit"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="tasks"></div>
       </main>
       <footer class="footer">
         <div class="main-footer">
@@ -112,7 +77,7 @@
             <input type="time" class="time-input" id="timer" />
           </div>
           <div class="button-footer">
-            <button class="btn-success">افزودن</button>
+            <button id="add-activity" class="btn-success">افزودن</button>
           </div>
         </div>
       </footer>

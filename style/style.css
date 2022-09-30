@@ -172,7 +172,7 @@ input::placeholder {
   margin-top: 1.25rem;
 }
 .activebtn .toDoCount {
-  background-color: grey;
+  background-color: #d9d9d9;
   border-radius: 50%;
   width: max-content;
   padding: 0.5rem;
@@ -205,4 +205,12 @@ input::placeholder {
 .time-input {
   flex-grow: 2;
   height: 100%;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
